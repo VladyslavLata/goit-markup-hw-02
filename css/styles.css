@@ -1,0 +1,39 @@
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+/* color: #2196F3;
+color: #212121; 
+color: #000000;
+color: #757575;
+color: #FFFFFF;
+color: rgba(255, 255, 255, 0.6);
+
+background: #F5F4FA;
+background: #FFFFFF;
+background: #2F303A;
+
+button: 
+background: #2196F3;
+background: #F5F4FA;
+
+*/
+
+/* background color */
+:root {
+  --main-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --section-background-color: #f5f4fa;
+}
+/* text color */
+:root {
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --hero-text-color: #ffffff;
+  --accent-text-color: #2196f3;
+  --contaks-footer-color: rgba(255, 255, 255, 0.6);
+  --address-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
