@@ -1,41 +1,34 @@
-/* hiden title */
-
 /* background color */
 :root {
   --main-background-color: #ffffff;
-  --team-item-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --section-background-color: #f5f4fa;
-}
-/* text color */
-:root {
+  /* text color */
   --main-text-color: #212121;
-  --secondary-text-color: #757575;
-  --hero-text-color: #ffffff;
+  --first-text-color: #757575;
+  --secondary-text-color: #ffffff;
   --accent-text-color: #2196f3;
   --contaks-footer-color: rgba(255, 255, 255, 0.6);
-  --address-color: #ffffff;
-}
-/* logo */
-:root {
+  /* logo */
   --main-logo-color: #2196f3;
   --first-logo-color: #000000;
   --second-logo-color: #ffffff;
-}
-/* button */
-:root {
+  /* button */
   --main-btn-color: #212121;
   --accent-btn-color: #ffffff;
   --main-btn-background-color: #f5f4fa;
   --accent-btn-background-color: #2196f3;
+  --secondary-accent-btn-background-color: #188ce8;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.03em;
   background-color: var(--main-background-color);
   color: var(--main-text-color);
 }
-a {
+.link {
   text-decoration: none;
 }
 .list {
@@ -66,7 +59,6 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
   color: var(--main-logo-color);
 }
 .header-logo-accent {
@@ -88,9 +80,11 @@ a {
   color: currentColor;
 }
 .header-contacts-link {
-  color: var(--secondary-text-color);
+  color: var(--first-text-color);
 }
-
+.current-link {
+  color: var(--accent-text-color);
+}
 /* ----------------main------------------ */
 /* -----------hero------------ */
 .hero {
@@ -103,7 +97,7 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--hero-text-color);
+  color: var(--secondary-text-color);
 }
 .hero-btn {
   font-family: inherit;
@@ -116,48 +110,46 @@ a {
   letter-spacing: 0.06em;
   color: var(--accent-btn-color);
   background-color: var(--accent-btn-background-color);
-}
-.hero-btn:hover {
   cursor: pointer;
 }
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--secondary-accent-btn-background-color);
+}
+
 /* ----------advantage section-------- */
 .advantage-title {
   font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .advantage-text {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--first-text-color);
 }
 /* -----------our jobs and team section---------- */
 .section-title {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 /* --------------team-------------------  */
 .team.section {
   background-color: var(--section-background-color);
 }
 .team-item {
-  background-color: var(--team-item-background-color);
+  background-color: var(--main-background-color);
 }
 .specialist {
-  font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .team-name {
   font-weight: 500;
 }
 .team-position {
-  color: var(--secondary-text-color);
+  color: var(--first-text-color);
 }
 /*----------------- PORTFOLIO----------------- */
 /* --------------------btn------------------- */
@@ -170,12 +162,13 @@ a {
   letter-spacing: 0.03em;
   color: var(--main-btn-color);
   background-color: var(--main-btn-background-color);
+  cursor: pointer;
 }
 .our-works-btn:hover,
-.our-works-btn:focus {
+.our-works-btn:focus,
+.current-btn {
   color: var(--accent-btn-color);
   background-color: var(--accent-btn-background-color);
-  cursor: pointer;
 }
 /* -------------our work------------------ */
 .our-works-title {
@@ -184,10 +177,8 @@ a {
   letter-spacing: 0.06em;
 }
 .our-works-text {
-  font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--first-text-color);
 }
 /* ---------------footer----------------- */
 .footer {
@@ -205,5 +196,5 @@ a {
   color: var(--contaks-footer-color);
 }
 .footer-text {
-  color: var(--address-color);
+  color: var(--secondary-text-color);
 }
